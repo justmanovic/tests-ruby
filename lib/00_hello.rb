@@ -3,10 +3,5 @@ def hello
 end
 
 def greet(name)
-  return "Hello, #{name}"
+  return "Hello, #{name}!"
 end
-
-# puts
-# puts hello
-# puts
-# puts greet("Jack")

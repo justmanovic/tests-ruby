@@ -7,11 +7,12 @@ def substract(num1, num2)
 end
 
 def sum(tab)
-  somme = 0
-  tab.each do |num|
-    somme = somme + num
-  end
-  return somme
+  # somme = 0
+  # tab.each do |num|
+  #   somme = somme + num
+  # end
+  # return somme
+  return tab.sum
 end
 
 def multiply(num1, num2)
@@ -23,16 +24,19 @@ def power(num1, num2)
 end
 
 def factorial(num)
-  factor = num
-  while num>1
-    factor = factor * (num -1)
-    puts 
-    num = num - 1
+  if (num == 0 || num ==1)
+    return 1
+  elsif num ==2
+    return 2
+  elsif num > 2
+    factor = num
+    while num>1
+      factor = factor * (num -1)
+      num = num - 1
+    end
+    return factor
   end
-  return factor
-  
 end
 
-# puts sum([1,2,3,4])
 
-puts factorial(3)
+puts factorial(10)
