@@ -12,9 +12,9 @@ def translate(string)
   end
 
   tab_string = tab_string+"ay".chars
-  new_string = tab_string.join
 
-  return new_string
+
+  return tab_string.join
 
 end
 
