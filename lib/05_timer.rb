@@ -5,7 +5,6 @@ def time_string(seconds)
     return [heures,minutes,seconds_new].join(":")
 end
 
-puts time_string(337)
 
 
 

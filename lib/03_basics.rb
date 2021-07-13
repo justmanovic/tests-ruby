@@ -13,9 +13,7 @@ def who_is_bigger(num1, num2, num3)
   end
 end
 
-puts who_is_bigger(nil, 1, 5)
-
-########
+################
 
 def reverse_upcase_noLTA(string)
   return string.upcase.reverse.delete("ALT")
@@ -23,16 +21,16 @@ end
 
 puts reverse_upcase_noLTA("Tries this at Home, Kids")
 
-########
+################
 
 def array_42(tab)
   return tab.include? 42
 end
 
-########
+################
 
 def magic_array(tab)
   return tab.flatten.sort.map!{|n| n * 2}.reject{|n| n%3 == 0}.uniq
 end
 
-########
+################
